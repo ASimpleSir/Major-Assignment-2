@@ -4,14 +4,19 @@
         display: grid;
         grid-template-columns:auto;
         background-color: rgb(248, 135, 6);
-        grid-gap :10px
+        grid-gap :20px
     }
     .par {
         display:grid;
         grid-template-columns: auto;
         background-color: brown;
-        grid-gap: 10px;
+        grid-gap: 20px;
     } 
+    .grid-container {
+        display:grid;
+        column-gap:30px;
+        row-gap:30px
+    }
 } 
 @media screen and (min-width: 500px) {
     .grid {
@@ -28,10 +33,25 @@
     } 
 }
 .grid-item {
-    background-color: rgb(250, 23, 23);
-    border: 5px dotted rgb(22, 47, 158);
+    background-image: linear-gradient(to right, rgb(187, 95, 95), blueviolet, rgb(187, 95, 95));
+    background-blend-mode: color-dodge;
+    opacity: inherit;
+    border: 3px inset rgb(240, 224, 6);
     font-size: 20px;
     padding: 10px;
-    color: bisque;
-    text-align: justify;
+    color: rgb(220, 224, 255);
+    text-align: center;
+    size:10%;
+}
+.grid-item-1 {
+    background-image: linear-gradient(to right, rgb(118, 129, 165), blueviolet, rgb(108, 129, 197));
+    background-blend-mode: color-dodge;
+    background-blend-mode: color-dodge;
+    opacity: inherit;
+    border: 5px outset rgb(240, 236, 2);
+    font-size: 17px;
+    padding: 10px;
+    color: rgb(221, 165, 223);
+    text-align: center;
+    size:10%;
 }
